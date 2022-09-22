@@ -1,0 +1,3 @@
+version=4
+https://github.com/Jehan/mypaint-brushes/releases \
+	.*/archive/v([0-9.]+)@ARCHIVE_EXT@

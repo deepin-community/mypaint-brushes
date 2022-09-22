@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	dh_auto_configure --sourcedirectory=v1
+	dh_auto_build --sourcedirectory=v1
+	dh_auto_install --sourcedirectory=v1
+	dh_auto_install
+
+override_dh_missing:
+	dh_missing --fail-missing
